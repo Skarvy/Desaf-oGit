@@ -11,6 +11,13 @@
     background-color: #f4f4f4;
     color: #333;
     padding: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
   }
   
   /* Header Styles */
@@ -24,9 +31,19 @@
     color: #3498db;
   }
   
+  /* Dark Mode Header */
+  body.dark-mode h1 {
+    color: #81c2fa;
+  }
+  
   p {
     font-size: 1.1rem;
     color: #555;
+  }
+  
+  /* Dark Mode Paragraph */
+  body.dark-mode p {
+    color: #bbbbbb;
   }
   
   /* Section Styles */
@@ -46,10 +63,21 @@
     margin-bottom: 15px;
   }
   
+  /* Dark Mode Section Titles */
+  body.dark-mode h2 {
+    color: #81c2fa;
+    border-bottom-color: #81c2fa;
+  }
+  
   ul {
     list-style-type: square;
     margin-left: 20px;
     color: #2c3e50;
+  }
+  
+  /* Dark Mode List */
+  body.dark-mode ul {
+    color: #e0e0e0;
   }
   
   /* Button Styles */
@@ -67,6 +95,12 @@
     background-color: #2980b9;
   }
   
+  /* Dark Mode Button */
+  body.dark-mode button {
+    background-color: #81c2fa;
+    color: #333;
+  }
+  
   /* Footer Styles */
   footer {
     text-align: center;
@@ -77,5 +111,57 @@
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+  
+  /* Dark Mode Footer */
+  body.dark-mode footer {
+    background-color: #1c1c1c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p, ul {
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    p, ul {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
   }
   
